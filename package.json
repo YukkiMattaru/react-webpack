@@ -1,0 +1,21 @@
+{
+  "name": "react-webpack",
+  "version": "1.0.0",
+  "description": "React application configured manually with Webpack including HMR, SAAS, TS, SVG, IMG and linters support",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "react-webpack"
+  },
+  "keywords": [
+    "react",
+    "webpack",
+    "HMR",
+    "configuration"
+  ],
+  "author": "gaidukov200078@gmail.com",
+  "license": "ISC"
+}
