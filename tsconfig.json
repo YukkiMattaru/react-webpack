@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "lib": ["dom", "esnext"],
+    "outDir": "./dist/",
+    "esModuleInterop": true,
+    "alwaysStrict": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    // Этот флаг включает сразу все пункты, которые будут явно объявлены ниже для лушчего понимания:
+     "strict": true,
+//    "noImplicitAny": true, // не пропускает any типы без явного указания any
+//    "strictNullChecks": true, // не пропускает undefined и null туда, где их не ждут
+//    "strictPropertyInitialization": true, // для классового реакта, ставлю, чтобы не было false
+//    "strictFunctionTypes": true, // совпадение типов функций
+//    "noImplicitThis": true, // предотвращает потерю контекста this
+//    "strictBindCallApply": true // что-то на старом
+    "noImplicitReturns": true,
+    "allowUnreachableCode": false,
+
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "src/**/*",
+    "declarations.d.ts"
+  ]
+}

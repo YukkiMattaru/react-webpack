@@ -1,0 +1,14 @@
+.list {
+    padding: 16px 48px;
+    margin: 8px 16px;
+    border: 1px solid black;
+}
+
+.list-item {
+    margin: 8px 0;
+}
+
+.pasha {
+    font-size: 24px;
+    font-weight: 500;
+}
