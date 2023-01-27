@@ -12,3 +12,11 @@
     font-size: 24px;
     font-weight: 500;
 }
+
+.app {
+    width: 80%;
+    padding: 2rem;
+    height: 100%;
+    margin: 0 auto;
+    background-color: white;
+}

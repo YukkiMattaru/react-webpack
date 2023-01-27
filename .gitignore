@@ -3,3 +3,6 @@
 
 # LIBRARY ROOT
 /node_modules
+
+# BUILD
+/dist

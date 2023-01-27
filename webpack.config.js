@@ -1,30 +1,17 @@
-const path = require('path');
+const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: './src/index.tsx',
     mode: 'development',
     output: {
-        path: path.resolve(__dirname, 'build'),
-        filename: 'main.js'
+        filename: './main.js',
+        clean: true,
     },
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: [
-                            ["@babel/preset-react", {runtime: "automatic"}]
-                        ],
-                        plugins: ["babel-plugin-styled-components"]
-                    }
-                }
-            },
-            {
-                test: /\.(ts|tsx)$/,
+                test: /\.(js|jsx|ts|tsx)$/,
                 exclude: /node_modules/,
                 use: [
                     {
@@ -77,19 +64,41 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|jp(e*)g|gif)$/,
-                type: "asset/resource"
+                test: /\.(png|jpg|jpeg|gif)$/,
+                type: "asset"
             },
             {
                 test: /\.svg$/,
-                use: ['@svgr/webpack']
-            }
+                use: [
+                    {
+                        loader: '@svgr/webpack',
+                        options: {
+                            svgoConfig: {
+                                plugins: [{name: 'preset-default'}]
+                            }
+                        }
+                    }
+                ]
+            },
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: "./public/index.html"
-        })
+        }),
+        new ImageMinimizerPlugin({
+            exclude: [/background.jpg/],
+            minimizer: {
+                implementation: ImageMinimizerPlugin.imageminMinify,
+                options: {
+                    plugins: [
+                        "imagemin-gifsicle",
+                        "imagemin-pngquant",
+                        ["imagemin-mozjpeg", { quality: 30 }]
+                    ],
+                },
+            },
+        }),
     ],
     resolve: {
         extensions: ['.js','.jsx', '.scss', '.css', '.ts', '.tsx']
