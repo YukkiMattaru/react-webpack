@@ -5,7 +5,11 @@
   "main": "src/index.tsx",
   "scripts": {
     "dev": "webpack-dev-server --open",
-    "build": "webpack"
+    "build": "webpack",
+    "lint:prettier": "prettier --check .",
+    "fix:prettier": "prettier --write .",
+    "lint:eslint": "eslint --ext .ts,.tsx,.js .",
+    "fix:eslint": "eslint --ext .ts,.tsx,.js . --fix"
   },
   "repository": {
     "type": "git",
