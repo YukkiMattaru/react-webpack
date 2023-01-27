@@ -1,22 +1,22 @@
 .list {
-    padding: 16px 48px;
-    margin: 8px 16px;
-    border: 1px solid black;
+  padding: 16px 48px;
+  margin: 8px 16px;
+  border: 1px solid black;
 }
 
 .list-item {
-    margin: 8px 0;
+  margin: 8px 0;
 }
 
 .pasha {
-    font-size: 24px;
-    font-weight: 500;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .app {
-    width: 80%;
-    padding: 2rem;
-    height: 100%;
-    margin: 0 auto;
-    background-color: white;
+  width: 80%;
+  padding: 2rem;
+  height: 100%;
+  margin: 0 auto;
+  background-color: white;
 }
