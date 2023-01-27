@@ -1,1 +1,8 @@
+# IDE
 /.idea
+
+# LIBRARY ROOT
+/node_modules
+
+# BUILD
+/dist

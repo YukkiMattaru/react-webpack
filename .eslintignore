@@ -1,0 +1,11 @@
+# IDE
+/.idea
+
+# LIBRARY ROOT
+/node_modules
+
+# BUILD
+/dist
+
+# STATIC SOURCES
+/public
