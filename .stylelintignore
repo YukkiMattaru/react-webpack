@@ -1,0 +1,8 @@
+# Build artifacts
+/build
+
+# Library
+/node_modules
+
+# Unsupported files
+*.json
