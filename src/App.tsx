@@ -32,6 +32,9 @@ const App: FC = () => {
         <li className={styles.listItem}>SVG</li>
         <li className={styles.listItem}>Typescript</li>
         <li className={styles.listItem}>Images</li>
+        <li className={styles.listItem}>Linting</li>
+        <li className={styles.listItem}>Optimization</li>
+        <li className={styles.listItem}>HMR</li>
       </ul>
       <p className={styles.pasha}>Илюха уволен</p>
       <label>Сколько тебе годиков?</label>
