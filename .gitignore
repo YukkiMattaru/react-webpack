@@ -1,5 +1,6 @@
 # IDE
 /.idea
+/.vscode
 
 # LIBRARY ROOT
 /node_modules

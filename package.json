@@ -23,6 +23,14 @@
     "HMR",
     "configuration"
   ],
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": ".cz-config.js"
+    }
+  },
   "author": "gaidukov200078@gmail.com",
   "license": "ISC",
   "devDependencies": {
@@ -33,11 +41,13 @@
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
     "@types/styled-components": "5.1.26",
+    "@types/webpack-env": "^1.18.0",
     "@typescript-eslint/eslint-plugin": "5.49.0",
     "@typescript-eslint/parser": "5.49.0",
     "babel-loader": "9.1.2",
     "babel-plugin-styled-components": "2.0.7",
     "css-loader": "6.7.3",
+    "cz-customizable": "^7.0.0",
     "eslint": "8.32.0",
     "eslint-config-prettier": "8.6.0",
     "eslint-plugin-react": "7.32.1",
