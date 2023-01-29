@@ -5,5 +5,6 @@ module.exports = {
   rules: {
     // @NOTE: This conflicts with styled-components
     'no-empty-source': null,
+    'string-quotes': 'single',
   },
 };

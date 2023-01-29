@@ -8,6 +8,7 @@ import Background from './assets/images/background.jpg';
 import Kitty from './assets/images/kitty.png';
 import MoscowCity from './assets/images/moscowcity.jpg';
 import Meow from './assets/images/meow.gif';
+import News from './components/News/News';
 
 const App: FC = () => {
   return (
@@ -35,6 +36,7 @@ const App: FC = () => {
       <p className={styles.pasha}>Илюха уволен</p>
       <label>Сколько тебе годиков?</label>
       <Input />
+      <News />
     </div>
   );
 };
